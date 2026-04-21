@@ -50,41 +50,6 @@ and Retrieval-Augmented Generation (RAG).
 - 🧠 **Conversation Memory** — จำบริบทการสนทนาด้วย Simple Memory
 - ⚡ **Google Gemini** — ขับเคลื่อนด้วย Gemini สำหรับทั้ง Chat และ Embeddings
 
-## 🏗️ Architecture
-
-```
-LINE User
-   │
-   ▼
-Webhook (POST)
-   │
-   ▼
-Pull Message Text
-   │
-   ▼
-AI Agent (Classifier) ── Google Gemini
-   │
-   ├── greeting ──► AI Agent (Greeting) ──────────────────┐
-   │                    └── Google Gemini                  │
-   │                                                       │
-   └── faq ──► RAG To Message                             │
-                   │                                       │
-                   ▼                                       │
-           AI Agent (RAG)                                  │
-           ├── Google Gemini Chat                          │
-           ├── Simple Memory                               │
-           └── Supabase Vector Store                       │
-               └── Embeddings (Gemini)                    │
-                   │                                       │
-                   └───────────────────────────────────────┘
-                                   │
-                                   ▼
-                          Code in JavaScript
-                                   │
-                                   ▼
-                        HTTP POST → LINE API
-```
-
 ## 🛠️ Tech Stack
 
 | Component | Technology |
