@@ -125,6 +125,9 @@ AI Agent (Classifier) ── Google Gemini
 
 5. **ตั้งค่า LINE Webhook**
    - นำ URL ของ n8n Webhook ไปใส่ใน LINE Developers Console
+## WORKFLOW
+
+![n8n Workflow](images/n8n_workflow.png)
 
 ## 🔄 How It Works
 
