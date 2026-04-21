@@ -126,16 +126,6 @@ AI Agent (Classifier) ── Google Gemini
 5. **ตั้งค่า LINE Webhook**
    - นำ URL ของ n8n Webhook ไปใส่ใน LINE Developers Console
 
-## 📂 Project Structure
-
-```
-line-rag-chatbot/
-├── workflow.json        # n8n workflow export
-├── README.md
-└── docs/
-    └── architecture.png # Workflow diagram
-```
-
 ## 🔄 How It Works
 
 1. ผู้ใช้ส่งข้อความมาทาง LINE
@@ -145,11 +135,4 @@ line-rag-chatbot/
    และสร้างคำตอบจากข้อมูลที่ค้นพบด้วย RAG
 5. ส่งคำตอบกลับผ่าน LINE API
 
-## 📝 License
 
-MIT License
-```
-
----
-
-นำไปใช้ได้เลยครับ! สามารถแก้ไข username, รายละเอียด Supabase table setup หรือเพิ่ม screenshot ของ workflow เข้าไปใน `docs/` ได้ตามต้องการ
